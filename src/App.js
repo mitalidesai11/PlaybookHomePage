@@ -1,20 +1,15 @@
 import React from 'react';
-//import { StyleSheet, Text, View } from 'react-native';
+import './index.css';
 
 function App() {
-  const myStyle= 
-    {
-    backgroundImage: "url(./Images/background_image.png)",
-    height:'50vh',
-    fontSize:'50px',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    }
+
   return <div>  
-  <div style={myStyle}>
+  <div className="backgroundImage">
+    <div className="container">
+      <div class="logo"><img src='.\Images\header-shield.png'></img></div>
+      <a href="https://nflplaybook.nfl.net/"><h1>Please click here to go to </h1><img src=".\Images\playbook.png" alt=""></img></a>
+    </div>
 </div>
-<div style={{textAlign:"center"}}> <h1>Please click here to go to Playbook </h1><a href="https://nflplaybook.nfl.net/">
-         <img src=".\Images\playbook.png" alt=""></img></a></div>
 </div>
 }
 
